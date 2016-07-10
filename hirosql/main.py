@@ -43,8 +43,9 @@ $("input").on("click", function(evt){ var i=$(this); var input=$("<input>").val(
 <a href="{{ request.path }}">{{ request.path }}</a><br/>
 {{ query }}</br>
 {{ delete }}</br>
-<form method="post" action="{{ request.path + '/delete?' + request.query_string }}"><input type="submit" value="delete"
-      onsubmit="return confirm('Do you really want to delete this ?');" ></form>
+<form method="post" action="{{ request.path + '/delete?' + request.query_string }}"
+      onsubmit="return confirm('Do you really want to delete this ?');">
+<input type="submit" value="delete"></form>
 <form method="get" action="{{ request.path }}"><input type="submit" value="filter"></form>
 <table>
 <tr>{% for k in keys %}<td>{{ k }}</td>{% endfor %}</tr>
