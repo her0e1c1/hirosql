@@ -7,7 +7,7 @@ install_requires = [str(ir.req) for ir in parse_requirements("requirements.txt",
 
 setup(
     name='hirosql',
-    version='0.1',
+    version='0.2',
     author='Hiroyuki Ishii',
     author_email="hiroyuki.ishii.42@gmail.com",
     # url="http://",
